@@ -1,8 +1,8 @@
 package shardkv
 
 import (
-	"6.824/shardctrler"
 	"fmt"
+	"github.com/blastbao/MIT6.824-2021/src/shardctrler"
 	"log"
 	"time"
 )

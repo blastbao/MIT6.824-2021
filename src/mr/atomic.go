@@ -11,11 +11,13 @@ import (
 func atomicWriteFile(filename string, r io.Reader) (err error) {
 	// write to a temp file first, then we'll atomically replace the target file
 	// with the temp file.
+	// 目录
 	dir, file := filepath.Split(filename)
 	if dir == "" {
 		dir = "."
 	}
 
+	// 创建临时文件
 	f, err := ioutil.TempFile(dir, file)
 	if err != nil {
 		return fmt.Errorf("cannot create temp file: %v", err)
@@ -26,6 +28,9 @@ func atomicWriteFile(filename string, r io.Reader) (err error) {
 			_ = os.Remove(f.Name()) // yes, ignore the error, not much we can do about it.
 		}
 	}()
+
+	// 写临时文件
+
 	// ensure we always close f. Note that this does not conflict with  the
 	// close below, as close is idempotent.
 	defer f.Close()
@@ -45,12 +50,16 @@ func atomicWriteFile(filename string, r io.Reader) (err error) {
 	} else if err != nil {
 		return err
 	} else {
+		// 修改权限
 		if err := os.Chmod(name, info.Mode()); err != nil {
 			return fmt.Errorf("can't set filemode on tempfile %q: %v", name, err)
 		}
 	}
+
+	// 重命名
 	if err := os.Rename(name, filename); err != nil {
 		return fmt.Errorf("cannot replace %q with tempfile %q: %v", filename, name, err)
 	}
+
 	return nil
 }

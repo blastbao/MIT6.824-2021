@@ -18,9 +18,9 @@ package raft
 //
 
 import (
-	"6.824/labgob"
-	"6.824/labrpc"
 	"bytes"
+	"github.com/blastbao/MIT6.824-2021/src/labgob"
+	"github.com/blastbao/MIT6.824-2021/src/labrpc"
 	"sync"
 	"sync/atomic"
 	"time"

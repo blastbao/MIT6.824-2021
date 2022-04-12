@@ -55,10 +55,12 @@ const (
 	Finished
 )
 
+// file := "mr-mapId-reduceId"
 func generateMapResultFileName(mapNumber, reduceNumber int) string {
 	return fmt.Sprintf("mr-%d-%d", mapNumber, reduceNumber)
 }
 
+// file := "mr-out-reduceId"
 func generateReduceResultFileName(reduceNumber int) string {
 	return fmt.Sprintf("mr-out-%d", reduceNumber)
 }

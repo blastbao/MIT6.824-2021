@@ -12,7 +12,7 @@ package main
 // instead of a and b.
 
 import "time"
-import "6.824/lockservice"
+import "github.com/blastbao/MIT6.824-2021/src/lockservice"
 import "os"
 import "fmt"
 

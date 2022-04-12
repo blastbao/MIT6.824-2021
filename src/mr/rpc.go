@@ -35,6 +35,7 @@ func (response HeartbeatResponse) String() string {
 	panic(fmt.Sprintf("unexpected JobType %d", response.JobType))
 }
 
+// 任务状态上报
 type ReportRequest struct {
 	Id    int
 	Phase SchedulePhase

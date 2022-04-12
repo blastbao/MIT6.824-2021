@@ -1,6 +1,6 @@
 package models
 
-import "6.824/porcupine"
+import "github.com/blastbao/MIT6.824-2021/src/porcupine"
 import "fmt"
 import "sort"
 

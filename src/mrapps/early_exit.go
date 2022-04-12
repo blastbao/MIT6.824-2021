@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"6.824/mr"
+	"github.com/blastbao/MIT6.824-2021/src/mr"
 )
 
 //

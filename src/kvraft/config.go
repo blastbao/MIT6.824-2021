@@ -1,6 +1,6 @@
 package kvraft
 
-import "6.824/labrpc"
+import "github.com/blastbao/MIT6.824-2021/src/labrpc"
 import "testing"
 import "os"
 
@@ -11,7 +11,7 @@ import "math/rand"
 import "encoding/base64"
 import "sync"
 import "runtime"
-import "6.824/raft"
+import "github.com/blastbao/MIT6.824-2021/src/raft"
 import "fmt"
 import "time"
 import "sync/atomic"

@@ -1,7 +1,7 @@
 package kvraft
 
 import (
-	"6.824/labrpc"
+	"github.com/blastbao/MIT6.824-2021/src/labrpc"
 	"crypto/rand"
 	"math/big"
 )

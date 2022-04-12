@@ -24,7 +24,7 @@
 ## 思路
 lab2 的内容是要实现一个除了节点变更功能外的 raft 算法，还是比较有趣的。
 
-有关 go 实现 raft 的种种坑，可以首先参考 6.824 课程对 [locking](https://pdos.csail.mit.edu/6.824/labs/raft-locking.txt) 和 [structure](https://pdos.csail.mit.edu/6.824/labs/raft-structure.txt) 的描述，然后再参考 6.824 TA 的 [guidance](https://thesquareplanet.com/blog/students-guide-to-raft/) 。写之前一定要看看这三篇博客，否则很容易被 bug 包围。
+有关 go 实现 raft 的种种坑，可以首先参考 6.824 课程对 [locking](https://pdos.csail.mit.edu/github.com/blastbao/MIT6.824-2021/src/labs/raft-locking.txt) 和 [structure](https://pdos.csail.mit.edu/github.com/blastbao/MIT6.824-2021/src/labs/raft-structure.txt) 的描述，然后再参考 6.824 TA 的 [guidance](https://thesquareplanet.com/blog/students-guide-to-raft/) 。写之前一定要看看这三篇博客，否则很容易被 bug 包围。
 
 另外，raft 论文的图 2 也很关键，一定要看懂其中的每一个描述。
 

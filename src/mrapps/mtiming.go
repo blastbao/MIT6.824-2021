@@ -7,7 +7,7 @@ package main
 // go build -buildmode=plugin mtiming.go
 //
 
-import "6.824/mr"
+import "github.com/blastbao/MIT6.824-2021/src/mr"
 import "strings"
 import "fmt"
 import "os"

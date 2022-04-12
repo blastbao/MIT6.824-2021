@@ -10,7 +10,7 @@ package main
 // Please do not change this file.
 //
 
-import "6.824/mr"
+import "github.com/blastbao/MIT6.824-2021/src/mr"
 import "plugin"
 import "os"
 import "fmt"
@@ -31,7 +31,7 @@ func main() {
 // load the application Map and Reduce functions
 // from a plugin file, e.g. ../mrapps/wc.so
 //
-func loadPlugin(filename string) (func(string, string) []mr.KeyValue, func(string, []string) string) {
+func loadPluginV1(filename string) (func(string, string) []mr.KeyValue, func(string, []string) string) {
 	p, err := plugin.Open(filename)
 	if err != nil {
 		log.Fatalf("cannot load plugin %v", filename)

@@ -1,12 +1,12 @@
 package shardkv
 
 import (
-	"6.824/labgob"
-	"6.824/labrpc"
-	"6.824/raft"
-	"6.824/shardctrler"
 	"bytes"
 	"fmt"
+	"github.com/blastbao/MIT6.824-2021/src/labgob"
+	"github.com/blastbao/MIT6.824-2021/src/labrpc"
+	"github.com/blastbao/MIT6.824-2021/src/raft"
+	"github.com/blastbao/MIT6.824-2021/src/shardctrler"
 	"sync"
 	"sync/atomic"
 	"time"

@@ -5,7 +5,7 @@ package main
 //
 
 import "time"
-import "6.824/viewservice"
+import "github.com/blastbao/MIT6.824-2021/src/viewservice"
 import "os"
 import "fmt"
 

@@ -4,7 +4,7 @@ package shardctrler
 // Shardctrler clerk.
 //
 
-import "6.824/labrpc"
+import "github.com/blastbao/MIT6.824-2021/src/labrpc"
 import "crypto/rand"
 import "math/big"
 

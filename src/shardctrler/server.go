@@ -1,14 +1,14 @@
 package shardctrler
 
 import (
-	"6.824/raft"
 	"fmt"
+	"github.com/blastbao/MIT6.824-2021/src/raft"
 	"sync/atomic"
 	"time"
 )
-import "6.824/labrpc"
+import "github.com/blastbao/MIT6.824-2021/src/labrpc"
 import "sync"
-import "6.824/labgob"
+import "github.com/blastbao/MIT6.824-2021/src/labgob"
 
 type ShardCtrler struct {
 	mu      sync.RWMutex

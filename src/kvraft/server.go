@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"6.824/labgob"
-	"6.824/labrpc"
-	"6.824/raft"
+	"github.com/blastbao/MIT6.824-2021/src/labgob"
+	"github.com/blastbao/MIT6.824-2021/src/labrpc"
+	"github.com/blastbao/MIT6.824-2021/src/raft"
 )
 
 type KVServer struct {
